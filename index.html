@@ -1,129 +1,705 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="Shopify design and e-commerce portfolio — self-initiated concept projects.">
-<title>Shopify Portfolio | Edet Bassey-Duke</title>
-<style>
-:root{--ink:#151515;--muted:#666;--paper:#f7f5f0;--card:#fff;--line:#dedbd3;--accent:#111}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,Arial,sans-serif;color:var(--ink);background:var(--paper);line-height:1.6}
-a{color:inherit;text-decoration:none}.wrap{max-width:1120px;margin:auto;padding:0 24px}
-nav{display:flex;justify-content:space-between;align-items:center;padding:24px 0;border-bottom:1px solid var(--line)}
-.logo{font-weight:800;letter-spacing:-.04em}.navlinks{display:flex;gap:26px;font-size:14px}.navlinks a:hover{text-decoration:underline}
-.hero{padding:105px 0 90px;max-width:900px}.eyebrow{text-transform:uppercase;letter-spacing:.16em;font-size:12px;font-weight:700;margin-bottom:20px}
-h1{font-size:clamp(48px,8vw,88px);line-height:.96;letter-spacing:-.065em;margin:0 0 28px}
-.hero p{font-size:20px;color:var(--muted);max-width:700px}.buttons{display:flex;gap:12px;margin-top:30px;flex-wrap:wrap}
-.btn{display:inline-block;padding:13px 19px;border:1px solid var(--ink);font-weight:700;font-size:14px}.btn.dark{background:var(--ink);color:#fff}
-.section{padding:78px 0;border-top:1px solid var(--line)}h2{font-size:38px;letter-spacing:-.04em;margin:0 0 12px}.lead{color:var(--muted);max-width:720px}
-.projects{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:36px}
-.card{background:var(--card);border:1px solid var(--line);overflow:hidden}.visual{height:220px;display:flex;align-items:flex-end;padding:22px;font-weight:800;font-size:25px;letter-spacing:-.04em}
-.luma{background:linear-gradient(135deg,#efe5da,#cbb8a7)}.nova{background:linear-gradient(135deg,#222,#777);color:white}.haven{background:linear-gradient(135deg,#e7dfd0,#a9a08e)}
-.cardbody{padding:22px}.tag{display:inline-block;font-size:10px;text-transform:uppercase;letter-spacing:.13em;font-weight:800;border:1px solid var(--line);padding:5px 8px;margin-bottom:13px}
-.card h3{font-size:23px;margin:0 0 8px}.card p{color:var(--muted);font-size:14px;margin:0 0 18px}.details{font-size:13px;color:#333}
-.about{display:grid;grid-template-columns:1fr 1fr;gap:60px}.skills{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:20px}.skill{border:1px solid var(--line);padding:12px;background:#fff;font-size:14px}
-.case{background:#fff;border:1px solid var(--line);padding:28px;margin-top:22px}.case h3{font-size:26px;margin:0 0 6px}.case ul{margin-bottom:0;color:#555}
-.note{background:#eeeae1;border-left:4px solid #222;padding:18px 20px;margin-top:26px;font-size:14px}
-.contact{display:flex;justify-content:space-between;gap:30px;align-items:flex-end}.contact p{color:var(--muted)}footer{padding:35px 0;color:#777;font-size:12px;border-top:1px solid var(--line)}
-@media(max-width:800px){.projects,.about{grid-template-columns:1fr}.hero{padding:70px 0}.navlinks{display:none}.contact{display:block}.visual{height:190px}}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta
+    name="description"
+    content="Edet Bassey-Duke — aspiring Shopify specialist and e-commerce portfolio."
+  >
+
+  <title>Edet Bassey-Duke | Shopify & E-commerce</title>
+
+  <style>
+    :root {
+      --ink: #111111;
+      --muted: #666666;
+      --paper: #f7f5f0;
+      --card: #ffffff;
+      --line: #dedbd3;
+      --accent: #1f5b3a;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      font-family: Inter, Arial, sans-serif;
+      color: var(--ink);
+      background: var(--paper);
+      line-height: 1.65;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    .wrap {
+      max-width: 1120px;
+      margin: auto;
+      padding: 0 24px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 22px 0;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .logo {
+      font-weight: 800;
+      letter-spacing: -0.04em;
+    }
+
+    .navlinks {
+      display: flex;
+      gap: 25px;
+      font-size: 14px;
+    }
+
+    .navlinks a {
+      text-decoration: none;
+    }
+
+    .navlinks a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      padding: 92px 0 80px;
+      max-width: 900px;
+    }
+
+    .eyebrow {
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      font-size: 11px;
+      font-weight: 800;
+      margin-bottom: 18px;
+      color: #333333;
+    }
+
+    h1 {
+      font-size: clamp(44px, 7vw, 82px);
+      line-height: 0.98;
+      letter-spacing: -0.065em;
+      margin: 0 0 25px;
+    }
+
+    .hero p {
+      font-size: 20px;
+      color: var(--muted);
+      max-width: 760px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 12px;
+      margin-top: 28px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 18px;
+      border: 1px solid var(--ink);
+      font-weight: 700;
+      font-size: 14px;
+      text-decoration: none;
+    }
+
+    .btn.dark {
+      background: var(--ink);
+      color: #ffffff;
+    }
+
+    .btn:hover {
+      opacity: 0.82;
+    }
+
+    .section {
+      padding: 72px 0;
+      border-top: 1px solid var(--line);
+    }
+
+    h2 {
+      font-size: 38px;
+      line-height: 1.1;
+      letter-spacing: -0.04em;
+      margin: 0 0 12px;
+    }
+
+    .lead {
+      color: var(--muted);
+      max-width: 760px;
+    }
+
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+      margin-top: 34px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      overflow: hidden;
+    }
+
+    .visual {
+      height: 215px;
+      display: flex;
+      align-items: flex-end;
+      padding: 22px;
+      font-weight: 800;
+      font-size: 25px;
+      letter-spacing: -0.04em;
+    }
+
+    .luma {
+      background: linear-gradient(135deg, #efe5da, #cbb8a7);
+    }
+
+    .nova {
+      background: linear-gradient(135deg, #222222, #777777);
+      color: white;
+    }
+
+    .haven {
+      background: linear-gradient(135deg, #e7dfd0, #a9a08e);
+    }
+
+    .cardbody {
+      padding: 21px;
+    }
+
+    .tag {
+      display: inline-block;
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.13em;
+      font-weight: 800;
+      border: 1px solid var(--line);
+      padding: 4px 8px;
+      margin-bottom: 12px;
+    }
+
+    .card h3 {
+      font-size: 22px;
+      margin: 0 0 7px;
+    }
+
+    .card p {
+      color: var(--muted);
+      font-size: 14px;
+      margin: 0 0 16px;
+    }
+
+    .details {
+      font-size: 13px;
+      color: #333333;
+    }
+
+    .about {
+      display: grid;
+      grid-template-columns: 1fr 1.2fr;
+      gap: 60px;
+    }
+
+    .skills {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .skill {
+      border: 1px solid var(--line);
+      padding: 12px;
+      background: #ffffff;
+      font-size: 14px;
+    }
+
+    .case {
+      background: #ffffff;
+      border: 1px solid var(--line);
+      padding: 26px;
+      margin-top: 22px;
+    }
+
+    .case h3 {
+      font-size: 25px;
+      margin: 0 0 6px;
+    }
+
+    .case ul {
+      margin-bottom: 0;
+      color: #555555;
+    }
+
+    .note {
+      background: #eeeae1;
+      border-left: 4px solid #222222;
+      padding: 17px 19px;
+      margin-top: 25px;
+      font-size: 14px;
+    }
+
+    .contact {
+      display: grid;
+      grid-template-columns: 1.3fr 1fr;
+      gap: 40px;
+      align-items: end;
+    }
+
+    .contact p {
+      color: var(--muted);
+    }
+
+    .contact-links {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .contact-links a {
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .contact-links a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      padding: 34px 0;
+      color: #777777;
+      font-size: 12px;
+      border-top: 1px solid var(--line);
+    }
+
+    @media (max-width: 800px) {
+      .projects,
+      .about,
+      .contact {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        padding: 65px 0;
+      }
+
+      .navlinks {
+        display: none;
+      }
+
+      .visual {
+        height: 190px;
+      }
+
+      .skills {
+        grid-template-columns: 1fr;
+      }
+
+      h1 {
+        font-size: 48px;
+      }
+    }
+  </style>
 </head>
+
 <body>
-<div class="wrap">
-<nav>
-  <div class="logo">EDET / SHOPIFY</div>
-  <div class="navlinks"><a href="#work">Work</a><a href="#about">About</a><a href="#skills">Skills</a><a href="#contact">Contact</a></div>
-</nav>
 
-<header class="hero">
-  <div class="eyebrow">Shopify Designer · E-commerce</div>
-  <h1>Thoughtful stores built around the customer.</h1>
-  <p>I create clean, responsive Shopify storefront concepts with a focus on product presentation, intuitive navigation, and a polished shopping experience.</p>
-  <div class="buttons"><a class="btn dark" href="#work">View concept projects</a><a class="btn" href="#contact">Get in touch</a></div>
-</header>
+  <div class="wrap">
 
-<section class="section" id="work">
-  <div class="eyebrow">Selected work</div>
-  <h2>Shopify concept projects</h2>
-  <p class="lead">These are self-initiated practice projects created to demonstrate my approach to Shopify storefront structure, visual design, product pages, collections, and responsive layouts.</p>
+    <!-- NAVIGATION -->
+    <nav>
+      <div class="logo">EDET BASSEY-DUKE</div>
 
-  <div class="projects">
-    <article class="card">
-      <div class="visual luma">LUMA<br>SKINCARE</div>
-      <div class="cardbody">
-        <span class="tag">Concept · Beauty</span>
-        <h3>Luma Skincare</h3>
-        <p>A calm, premium storefront concept designed to make product discovery simple and build confidence through clear product information.</p>
-        <div class="details"><b>Focus:</b> Homepage · Collections · Product page · Mobile UX</div>
+      <div class="navlinks">
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
       </div>
-    </article>
-    <article class="card">
-      <div class="visual nova">NOVA<br>STREETWEAR</div>
-      <div class="cardbody">
-        <span class="tag">Concept · Fashion</span>
-        <h3>Nova Streetwear</h3>
-        <p>A bold fashion storefront concept focused on strong imagery, straightforward navigation, collection discovery, and mobile-first presentation.</p>
-        <div class="details"><b>Focus:</b> Theme layout · Navigation · Collection UX · Responsive design</div>
+    </nav>
+
+
+    <!-- HERO -->
+    <header class="hero">
+
+      <div class="eyebrow">
+        Aspiring Shopify Specialist · E-commerce
       </div>
-    </article>
-    <article class="card">
-      <div class="visual haven">HAVEN<br>HOME</div>
-      <div class="cardbody">
-        <span class="tag">Concept · Home</span>
-        <h3>Haven Home</h3>
-        <p>A warm home-decor concept organized around collections and editorial storytelling while keeping the shopping path clear.</p>
-        <div class="details"><b>Focus:</b> Merchandising · Product cards · Content sections · Mobile UX</div>
+
+      <h1>
+        Building clean, customer-focused e-commerce experiences.
+      </h1>
+
+      <p>
+        I’m developing practical Shopify and e-commerce skills through
+        self-initiated storefront concepts, with a focus on clear navigation,
+        product presentation, responsive layouts, and a polished customer journey.
+      </p>
+
+      <div class="buttons">
+        <a class="btn dark" href="#work">
+          View My Projects
+        </a>
+
+        <a class="btn" href="#contact">
+          Contact Me
+        </a>
       </div>
-    </article>
+
+    </header>
+
+
+    <!-- WORK -->
+    <section class="section" id="work">
+
+      <div class="eyebrow">
+        Selected Work
+      </div>
+
+      <h2>
+        Shopify Concept Projects
+      </h2>
+
+      <p class="lead">
+        These are self-initiated practice projects created to demonstrate my
+        approach to Shopify storefront structure, visual design, product pages,
+        collections, and responsive layouts. They are not presented as paid
+        client work.
+      </p>
+
+
+      <div class="projects">
+
+        <!-- PROJECT 1 -->
+        <article class="card">
+
+          <div class="visual luma">
+            LUMA<br>
+            SKINCARE
+          </div>
+
+          <div class="cardbody">
+
+            <span class="tag">
+              Concept · Beauty
+            </span>
+
+            <h3>
+              Luma Skincare
+            </h3>
+
+            <p>
+              A calm, premium storefront concept designed to make product
+              discovery simple and build confidence through clear product
+              information.
+            </p>
+
+            <div class="details">
+              <b>Focus:</b>
+              Homepage · Collections · Product Page · Mobile UX
+            </div>
+
+          </div>
+
+        </article>
+
+
+        <!-- PROJECT 2 -->
+        <article class="card">
+
+          <div class="visual nova">
+            NOVA<br>
+            STREETWEAR
+          </div>
+
+          <div class="cardbody">
+
+            <span class="tag">
+              Concept · Fashion
+            </span>
+
+            <h3>
+              Nova Streetwear
+            </h3>
+
+            <p>
+              A bold fashion storefront concept focused on strong imagery,
+              straightforward navigation, collection discovery, and
+              mobile-first presentation.
+            </p>
+
+            <div class="details">
+              <b>Focus:</b>
+              Theme Layout · Navigation · Collection UX · Responsive Design
+            </div>
+
+          </div>
+
+        </article>
+
+
+        <!-- PROJECT 3 -->
+        <article class="card">
+
+          <div class="visual haven">
+            HAVEN<br>
+            HOME
+          </div>
+
+          <div class="cardbody">
+
+            <span class="tag">
+              Concept · Home
+            </span>
+
+            <h3>
+              Haven Home
+            </h3>
+
+            <p>
+              A warm home-decor concept organized around collections and
+              editorial storytelling while keeping the shopping path clear.
+            </p>
+
+            <div class="details">
+              <b>Focus:</b>
+              Merchandising · Product Cards · Content Sections · Mobile UX
+            </div>
+
+          </div>
+
+        </article>
+
+      </div>
+
+
+      <!-- TRANSPARENCY -->
+      <div class="note">
+
+        <b>Portfolio Transparency:</b>
+
+        The projects shown above are self-initiated concept projects created
+        for portfolio development. They are not presented as paid client work.
+        My goal is to demonstrate my design thinking, e-commerce understanding,
+        and developing Shopify workflow honestly.
+
+      </div>
+
+
+      <!-- APPROACH -->
+      <div class="case">
+
+        <h3>
+          My Approach to a Shopify Build
+        </h3>
+
+        <ul>
+
+          <li>
+            Plan store structure and navigation around the customer journey.
+          </li>
+
+          <li>
+            Organize homepage sections for clear brand messaging and product discovery.
+          </li>
+
+          <li>
+            Create readable product and collection information hierarchies.
+          </li>
+
+          <li>
+            Think responsively across desktop and mobile layouts.
+          </li>
+
+          <li>
+            Keep typography, imagery, sections, blocks, and visual choices
+            consistent with the brand.
+          </li>
+
+        </ul>
+
+      </div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+
+      <div class="about">
+
+        <div>
+
+          <div class="eyebrow">
+            About Me
+          </div>
+
+          <h2>
+            Building practical skills for e-commerce.
+          </h2>
+
+        </div>
+
+
+        <div>
+
+          <p>
+            I’m an aspiring Shopify specialist focused on learning how effective
+            online stores are structured, presented, and experienced by customers.
+          </p>
+
+          <p>
+            My portfolio uses self-initiated concepts to demonstrate my ability
+            to think about storefront structure, product presentation,
+            responsive design, navigation, and customer-focused e-commerce
+            experiences.
+          </p>
+
+          <p>
+            I’m currently seeking an opportunity where I can continue developing
+            these skills while contributing reliably to a Shopify or e-commerce
+            team.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- SKILLS -->
+    <section class="section" id="skills">
+
+      <div class="eyebrow">
+        Capabilities
+      </div>
+
+      <h2>
+        Skills I’m Developing
+      </h2>
+
+      <div class="skills">
+
+        <div class="skill">
+          Shopify store setup
+        </div>
+
+        <div class="skill">
+          Theme customization
+        </div>
+
+        <div class="skill">
+          Sections &amp; blocks
+        </div>
+
+        <div class="skill">
+          Product &amp; collection organization
+        </div>
+
+        <div class="skill">
+          Responsive design
+        </div>
+
+        <div class="skill">
+          Product-page UX
+        </div>
+
+        <div class="skill">
+          Navigation &amp; information architecture
+        </div>
+
+        <div class="skill">
+          Basic HTML &amp; CSS
+        </div>
+
+        <div class="skill">
+          E-commerce visual design
+        </div>
+
+        <div class="skill">
+          Mobile-first thinking
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+
+      <div class="contact">
+
+        <div>
+
+          <div class="eyebrow">
+            Contact
+          </div>
+
+          <h2>
+            Let’s connect.
+          </h2>
+
+          <p>
+            I’m open to Shopify, e-commerce, junior, internship, freelance,
+            and learning opportunities where I can contribute and continue
+            developing my skills.
+          </p>
+
+        </div>
+
+
+        <div class="contact-links">
+
+          <a href="mailto:edetbasseyduke281@gmail.com">
+            ✉ edetbasseyduke281@gmail.com
+          </a>
+
+          <a href="tel:+2349135367352">
+            ☎ +234 913 536 7352
+          </a>
+
+          <a
+            href="https://github.com/edetbasseyduke281-son"
+            target="_blank"
+            rel="noopener"
+          >
+            GitHub Profile →
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+      © 2026 Edet Bassey-Duke · Shopify &amp; E-commerce Portfolio ·
+      Concept projects clearly labeled
+
+    </footer>
+
   </div>
 
-  <div class="note"><b>Transparency:</b> Every project shown above is a self-initiated concept project, not paid client work. The purpose is to demonstrate my design thinking and Shopify workflow honestly.</div>
-
-  <div class="case">
-    <h3>What I would deliver in a Shopify build</h3>
-    <ul>
-      <li>Store structure and navigation planned around the customer journey.</li>
-      <li>Homepage sections organized for clear brand messaging and product discovery.</li>
-      <li>Product and collection pages with readable information hierarchy.</li>
-      <li>Responsive layouts checked across desktop and mobile views.</li>
-      <li>Theme settings, sections, blocks, typography, colors, and visual consistency configured to the brand.</li>
-    </ul>
-  </div>
-</section>
-
-<section class="section" id="about">
-  <div class="about">
-    <div>
-      <div class="eyebrow">About</div>
-      <h2>Building practical e-commerce skills.</h2>
-    </div>
-    <div>
-      <p>I’m an aspiring Shopify specialist focused on learning and developing modern e-commerce experiences. I use self-initiated projects to practice storefront structure, product presentation, responsive design, and customer-focused navigation.</p>
-      <p>I’m currently building my professional experience and am interested in opportunities where I can continue developing these skills while contributing to real e-commerce projects.</p>
-    </div>
-  </div>
-</section>
-
-<section class="section" id="skills">
-  <div class="eyebrow">Capabilities</div>
-  <h2>Skills I’m developing</h2>
-  <div class="skills">
-    <div class="skill">Shopify store setup</div><div class="skill">Theme customization</div>
-    <div class="skill">Sections & blocks</div><div class="skill">Product & collection organization</div>
-    <div class="skill">Responsive design</div><div class="skill">Product-page UX</div>
-    <div class="skill">Navigation & information architecture</div><div class="skill">Basic HTML & CSS</div>
-    <div class="skill">E-commerce visual design</div><div class="skill">Mobile-first thinking</div>
-  </div>
-</section>
-
-<section class="section" id="contact">
-  <div class="contact">
-    <div><div class="eyebrow">Contact</div><h2>Let’s build something useful.</h2><p>For opportunities, collaborations, or Shopify-related work, get in touch.</p></div>
-    <div><a class="btn dark" href="mailto:YOUR-EMAIL@example.com">YOUR-EMAIL@example.com</a></div>
-  </div>
-</section>
-
-<footer>© 2026 Edet Bassey-Duke · Shopify portfolio · Concept projects clearly labeled</footer>
-</div>
 </body>
 </html>
